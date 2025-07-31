@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Musab Siddiqi - Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #2a5298;
+      --secondary-color: #007acc;
+      --accent-color: #ffd700;
+      --text-color-light: #ffffff;
+      --text-color-dark: #222;
+      --bg-color: #f5f5f5;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color-dark);
+      line-height: 1.6;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--primary-color);
+      padding: 1rem 3rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      color: var(--text-color-light);
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: var(--text-color-light);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .content {
+      padding: 120px 2rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent-color);
+      display: inline-block;
+      padding-bottom: 0.3rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .skills-list {
+      list-style: disc;
+      margin-left: 1.5rem;
+    }
+
+    .project-card {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card h3 {
+      margin-bottom: 0.5rem;
+      color: var(--secondary-color);
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: 0.6rem 1.4rem;
+      border-radius: 25px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+
+    .btn:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      background-color: var(--secondary-color);
+      color: var(--text-color-light);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">MUHAMMAD MUSAB SIDDIQI</div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="content">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a motivated final-year Computer Systems Engineering student with strong foundations in hardware,
+        software, and embedded systems. I am seeking internship opportunities to apply my technical skills and gain
+        practical industry experience.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Computer Networks: Design network topologies, routing, switching</li>
+        <li>Digital Circuit Analysis: Microprocessor architecture, FPGA modeling (Verilog HDL)</li>
+        <li>Programming Languages: C++, C, SQL, Verilog HDL, HTML, CSS, JavaScript</li>
+        <li>Tools: NI Multisim, CISCO Packet Tracer, Xilinx ISE, AutoCAD, Dev C++</li>
+        <li>Office Skills: Microsoft Word, Excel, PowerPoint</li>
+        <li>Soft Skills: Communication, Team Collaboration, Problem Solving</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Adjustable Power Supply</h3>
+        <p>
+          Designed and built an adjustable DC power supply capable of outputting voltages ranging from 5V to 12V.
+          Included regulated voltage circuitry for stable power delivery for testing components.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Microcontroller 8051</h3>
+        <p>
+          Constructed a simple microcontroller system using the 8051 chip on a Vero board. Programmed the chip
+          and tested embedded functionality in real-time.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>Library Management System</h3>
+        <p>
+          Created a MySQL database-driven application for library operations. Features included adding,
+          deleting, and retrieving book/member records.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <h3>FPGA-Based LED Pattern</h3>
+        <p>
+          Programmed a disco-style LED blinking pattern on Spartan-3E FPGA using Verilog HDL. Included FSM logic
+          and clock division to simulate bidirectional movement.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> 0092 343 2565363</p>
+      <p><strong>Email:</strong> <a href="mailto:musabsiddiqi350@gmail.com">musabsiddiqi350@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/musab-siddiqi" target="_blank">Visit Profile</a></p>
+      <p><a href="resume.pdf" class="btn" target="_blank">Download Resume</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Muhammad Musab Siddiqi. All rights reserved.
+  </footer>
+
+</body>
+</html>
